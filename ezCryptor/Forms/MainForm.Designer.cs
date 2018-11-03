@@ -32,13 +32,15 @@
             this.mainProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.mainStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.topPanel = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.algorithmsCombo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.chunkSizeCombo = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.keySizeCombo = new System.Windows.Forms.ComboBox();
             this.paddingCombo = new System.Windows.Forms.ComboBox();
             this.mainTabControl = new System.Windows.Forms.TabControl();
@@ -46,11 +48,9 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolBtn = new System.Windows.Forms.ToolStripMenuItem();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.mainStatusBar.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.topPanel.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.mainMenu.SuspendLayout();
@@ -80,7 +80,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.topPanel);
             this.panel1.Controls.Add(this.mainTabControl);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 24);
@@ -88,14 +88,14 @@
             this.panel1.Size = new System.Drawing.Size(520, 367);
             this.panel1.TabIndex = 1;
             // 
-            // panel3
+            // topPanel
             // 
-            this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(520, 65);
-            this.panel3.TabIndex = 20;
+            this.topPanel.Controls.Add(this.panel6);
+            this.topPanel.Controls.Add(this.panel5);
+            this.topPanel.Location = new System.Drawing.Point(0, 0);
+            this.topPanel.Name = "topPanel";
+            this.topPanel.Size = new System.Drawing.Size(520, 65);
+            this.topPanel.TabIndex = 20;
             // 
             // panel6
             // 
@@ -173,6 +173,24 @@
             this.panel5.Size = new System.Drawing.Size(255, 65);
             this.panel5.TabIndex = 22;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(10, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Key Size:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Padding:";
+            // 
             // keySizeCombo
             // 
             this.keySizeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -240,24 +258,6 @@
             this.aboutToolBtn.Size = new System.Drawing.Size(107, 22);
             this.aboutToolBtn.Text = "&About";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "Padding:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "Key Size:";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,7 +275,7 @@
             this.mainStatusBar.ResumeLayout(false);
             this.mainStatusBar.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.topPanel.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -296,7 +296,7 @@
         private System.Windows.Forms.MenuStrip mainMenu;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel topPanel;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.ComboBox algorithmsCombo;
         private System.Windows.Forms.Label label1;

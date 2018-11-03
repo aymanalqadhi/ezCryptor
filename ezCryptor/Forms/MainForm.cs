@@ -111,7 +111,7 @@ namespace ezCryptor.Forms
 
             _app.CompositionService.SatisfyImportsOnce(this);
             _progressReporter.ProgressUpdated += (ss, ee) => ReportProgress(ee.Item1, ee.Item2);
-            _progressReporter.UILockRequested += (ss, ee) => mainTabControl.Enabled = !ee;
+            _progressReporter.UILockRequested += (ss, ee) => mainTabControl.Enabled = topPanel.Enabled = !ee;
 
             _logger.AddOutputStreams(Console.OpenStandardOutput());
             _logger.Log(LoggingLevel.Information, "App Initialized Successully!");
