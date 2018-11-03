@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezCryptor", "ezCryptor\ezCryptor.csproj", "{8E805117-B280-45BC-9FDF-097615D412CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezCryptor.Shared", "ezCryptor.Shared\ezCryptor.Shared.csproj", "{3A250EF1-F35B-4216-8375-7397BA016550}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E805117-B280-45BC-9FDF-097615D412CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E805117-B280-45BC-9FDF-097615D412CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E805117-B280-45BC-9FDF-097615D412CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E805117-B280-45BC-9FDF-097615D412CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A250EF1-F35B-4216-8375-7397BA016550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A250EF1-F35B-4216-8375-7397BA016550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A250EF1-F35B-4216-8375-7397BA016550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A250EF1-F35B-4216-8375-7397BA016550}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
